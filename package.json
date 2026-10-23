@@ -1,0 +1,7 @@
+{
+  "name": "soul-frequency",
+  "private": true,
+  "type": "module",
+  "description": "24题、12位作家与哲学家的文学知音试测网站",
+  "scripts": { "dev": "node server.mjs", "start": "node server.mjs", "build": "node scripts/finalize-content.mjs", "test": "node tests/matching.mjs" }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "questions": 24,
+  "authors": 12,
+  "rules": 44,
+  "randomCases": 24000,
+  "resultPaths": {
+    "hesse": 4630,
+    "rilke": 3205,
+    "woolf": 1622,
+    "shi": 1820,
+    "buber": 1704,
+    "montaigne": 1707,
+    "nietzsche": 1480,
+    "luxun": 1620,
+    "epictetus": 1891,
+    "camus": 1208,
+    "arendt": 1189,
+    "beauvoir": 1924
+  },
+  "modes": {
+    "resonance": 22448,
+    "explore": 1552
+  },
+  "note": "随机案例只检查程序路径、有限数值及可达性，不代表受试者、准确率或类型人群比例。"
+}

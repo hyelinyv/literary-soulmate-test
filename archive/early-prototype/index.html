@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f8fa">
+  <meta name="description" content="从关于自由、自我与意义的思考出发，寻找与你同频的哲学家或作家。">
+  <title>同频 · 你的灵魂，与谁同频？</title>
+  <link rel="icon" type="image/svg+xml" href="./soul.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <div class="ambient ambient-mint" aria-hidden="true"></div>
+  <div class="ambient ambient-lilac" aria-hidden="true"></div>
+  <div class="ambient ambient-peach" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="同频，返回首页">
+      <span class="brand-icon" aria-hidden="true"><img src="./soul.svg" alt=""></span>
+      <span>同频<span class="brand-en">SOUL FREQUENCY</span></span>
+    </a>
+    <button class="about-button glass" id="about-button" aria-label="关于这次探索"><span aria-hidden="true">✧</span><span class="about-label">关于这次探索</span></button>
+  </header>
+
+  <main id="main-content">
+    <section class="home screen" id="home-screen" aria-labelledby="home-title">
+      <div class="hero-grid">
+        <div class="hero-heading">
+          <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span>给好奇的你，一场灵魂漫游</div>
+          <h1 id="home-title">你的灵魂，<br>与谁<span class="title-accent">同频？<svg viewBox="0 0 200 16" aria-hidden="true"><path d="M5 10 Q96 -2 194 8"/></svg></span></h1>
+        </div>
+
+        <div class="soul-scene" aria-hidden="true">
+          <div class="scene-glow"></div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="scene-spark spark-one">✧</span><span class="scene-spark spark-two">✦</span>
+          <div class="thought-card glass"><span class="card-index">A LITTLE THOUGHT</span><span class="thought-copy">意义，<br>由你定义。</span><span class="card-line"></span><span class="card-small">留一点空间，给无限可能。</span></div>
+          <div class="spirit-card glass">
+            <div class="card-top"><span class="card-dots"><i></i><i></i><i></i></span><span>HELLO, SOUL</span><span>↗</span></div>
+            <div class="spirit-spotlight"></div>
+            <img class="hero-spirit" src="./soul.svg" alt="">
+            <div class="spirit-caption">世界很大，<br><strong>总有灵魂与你共鸣。</strong></div>
+            <div class="little-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="floating-tag tag-curiosity glass"><span>✳</span>一点好奇心</div>
+          <div class="floating-tag tag-free glass"><span>↗</span>自由生长中</div>
+          <span class="bubble bubble-one"></span><span class="bubble bubble-two"></span>
+        </div>
+
+        <div class="hero-bottom">
+          <p class="hero-intro">你如何理解自由、爱与人生的意义？<br>跟随几个有趣的思考，遇见与你同频的哲学家或作家。</p>
+          <div class="journey-meta"><span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg>约 2 分钟</span><span class="meta-divider"></span><span>6 道思考题</span><span class="meta-divider"></span><span>凭直觉作答</span></div>
+          <button class="primary-button start-button" id="start-button"><span>开始寻找</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+          <p class="start-note">每一种答案，都有自己的光。</p>
+        </div>
+      </div>
+      <div class="home-bottom-line"><span class="tiny-orbit" aria-hidden="true">✧</span><span>关于自由，关于世界，也关于你。</span><span class="line-end">FOLLOW YOUR INNER WORLD</span></div>
+    </section>
+
+    <section class="quiz screen" id="quiz-screen" aria-labelledby="question-title" hidden>
+      <div class="quiz-topline"><button class="text-button" id="back-button">← <span>返回首页</span></button><span class="quiz-caption">慢慢想，听见自己的声音。</span></div>
+      <form class="question-card glass" id="question-form">
+        <div class="question-meta"><span id="question-topic"></span><span id="question-number"></span></div>
+        <div class="progress-track" role="progressbar" aria-label="答题进度" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><div id="progress-fill"></div></div>
+        <fieldset><legend id="question-title" tabindex="-1"></legend><p class="question-hint">哪一种想法，更接近此刻的你？</p><div class="options" id="options"></div></fieldset>
+        <div class="question-footer"><span>答案没有对错</span><button class="primary-button next-button" id="next-button" type="submit" disabled>下一题 <span aria-hidden="true">→</span></button></div>
+      </form>
+      <div class="quiz-companion"><img src="./soul.svg" alt=""><span>跟随你的直觉就好。</span></div>
+    </section>
+
+    <section class="result screen" id="result-screen" aria-labelledby="result-name" hidden>
+      <p class="result-eyebrow"><span aria-hidden="true">✧</span> 穿过这些思考，你遇见了</p>
+      <div class="result-card glass" id="result-card">
+        <div class="result-art" aria-hidden="true"><span class="result-orbit"></span><img src="./soul.svg" alt=""><span class="result-star">✦</span></div>
+        <span class="result-kicker">与你同频的灵魂</span>
+        <h2 id="result-name" tabindex="-1"></h2><p class="result-english" id="result-english"></p>
+        <div class="result-tags" id="result-tags"></div>
+        <p class="result-interpretation" id="result-interpretation"></p>
+        <div class="result-insight"><span class="section-label">你的同频线索</span><p id="result-clue"></p></div>
+        <div class="book-card"><span class="book-icon" aria-hidden="true">▤</span><div><span class="section-label">让这场相遇继续</span><h3 id="result-book"></h3><p id="result-book-note"></p></div></div>
+        <details class="reading-source"><summary>人物与阅读资料</summary><p>人物描述是本网站对作品主题的简要解读。<a id="result-source" target="_blank" rel="noopener noreferrer">查看参考资料 ↗</a></p></details>
+      </div>
+      <div class="result-actions"><button class="primary-button" id="restart-button">再探索一次 <span aria-hidden="true">↻</span></button><button class="secondary-button glass" id="copy-button">复制我的结果 <span aria-hidden="true">↗</span></button></div>
+      <p class="result-footnote">这是一场文学与哲学的趣味探索，结果仅供自我发现。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>同频 · 给灵魂一点回声</span><span>A SMALL JOURNEY INWARD</span></footer>
+
+  <dialog id="about-dialog" class="about-dialog glass" aria-labelledby="about-title">
+    <button class="dialog-close" id="close-about" aria-label="关闭介绍">×</button><span class="dialog-spark" aria-hidden="true">✧</span>
+    <h2 id="about-title">给灵魂一点回声。</h2>
+    <p>从 6 个关于自由、自我、意义与理解的问题出发，看看你的想法与哪位哲学家或作家的作品主题产生共鸣。</p>
+    <p>这里没有标准答案。跟随你此刻的想法，就很好。</p>
+    <div class="about-detail"><strong>这次探索如何运作？</strong><p>每个答案对应几种文学与哲学倾向，综合后呈现最接近的一位人物。题目与匹配规则为原创趣味设计，并非专业心理量表。</p><p>答案仅保存在当前浏览器的会话中，不会发送到服务器。关闭标签页后会清除。</p></div>
+    <button class="primary-button" id="about-done">带着好奇出发 <span aria-hidden="true">↗</span></button>
+  </dialog>
+  <div class="toast glass" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+ <defs><linearGradient id="body" x1="68" y1="23" x2="176" y2="217" gradientUnits="userSpaceOnUse"><stop stop-color="#d4fbef"/><stop offset=".45" stop-color="#8ce2e4"/><stop offset="1" stop-color="#7cc7ed"/></linearGradient><radialGradient id="shine" cx="0" cy="0" r="1" gradientTransform="translate(88 73) rotate(60) scale(115)"><stop stop-color="white" stop-opacity=".65"/><stop offset="1" stop-color="white" stop-opacity="0"/></radialGradient><linearGradient id="edge" x1="74" y1="27" x2="178" y2="215"><stop stop-color="white" stop-opacity=".95"/><stop offset="1" stop-color="white" stop-opacity=".22"/></linearGradient></defs>
+ <path d="M35 131C34 109 24 98 40 81C51 69 71 77 78 58C86 36 94 26 114 29C137 32 135 51 154 57C173 62 184 50 199 64C217 81 196 102 207 122C219 143 219 158 203 170C183 184 183 175 166 192C150 210 135 198 119 202C101 208 91 219 73 207C58 196 64 178 48 170C29 162 27 148 35 131Z" fill="url(#body)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M35 131C34 109 24 98 40 81C51 69 71 77 78 58C86 36 94 26 114 29C137 32 135 51 154 57C173 62 184 50 199 64C217 81 196 102 207 122C219 143 219 158 203 170C183 184 183 175 166 192C150 210 135 198 119 202C101 208 91 219 73 207C58 196 64 178 48 170C29 162 27 148 35 131Z" fill="url(#shine)"/>
+ <ellipse cx="94" cy="119" rx="7" ry="9" fill="#244c57"/><ellipse cx="148" cy="119" rx="7" ry="9" fill="#244c57"/>
+ <path d="M113 137Q121 146 130 136" stroke="#244c57" stroke-width="4.5" stroke-linecap="round"/>
+ <ellipse cx="78" cy="138" rx="10" ry="5" fill="#fff" opacity=".38"/><ellipse cx="165" cy="138" rx="10" ry="5" fill="#fff" opacity=".38"/>
+ <path d="M69 77Q78 55 96 52" stroke="white" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+</svg>
