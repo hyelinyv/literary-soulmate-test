@@ -1,8 +1,14 @@
 {
   "status": "passed",
+  "contentVersion": "q24-v1.3-beta1",
+  "matchingVersion": "m1.1-editorial",
   "questions": 24,
   "authors": 12,
   "rules": 44,
+  "approvedNames": true,
+  "unchangedQuestions": 23,
+  "q18ReasonSeparation": true,
+  "oldQ18ProgressRejected": true,
   "randomCases": 24000,
   "resultPaths": {
     "hesse": 4630,
